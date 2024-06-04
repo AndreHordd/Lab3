@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покупки</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body>
+<form id="form">
+    <section id="addSection">
+        <label id="textForm">
+            <input id="productNameInput" type="text" placeholder="Назва товару">
+            <button id="addButton" class="tooltip" data-tooltip="Додати товар">Додати
+                <span class="tooltiptext"></span>
+            </button>
+        </label>
+        <hr/>
+        <div id="productList">
+            <!-- Початкові товари будуть тут -->
+        </div>
+    </section>
+    <section id="listSection">
+        <h1>Залишилося</h1>
+        <hr/>
+        <div id="remainingProducts" class="productContainer"></div>
+        <hr/>
+        <h1>Куплено</h1>
+        <hr/>
+        <div id="purchasedProducts" class="productContainer"></div>
+    </section>
+</form>
+
+<footer class="badge">
+    <h2 class="badge">Buy List</h2>
+    <span class="createBy">Created by:</span><br />
+    <span class="nameAuthor">Hordashko Andrii</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
